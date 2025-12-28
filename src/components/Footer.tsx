@@ -1,4 +1,5 @@
 import { Instagram, Facebook, Mail, Phone } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const scrollToSection = (id: string) => {
@@ -15,11 +16,8 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-full bg-gold-shimmer flex items-center justify-center text-primary-foreground font-serif text-xl">
-                GT
-              </div>
-              <span className="font-serif text-lg text-foreground">Dra. Gabriela</span>
+            <div className="mb-4">
+              <img src={logo} alt="Dra. Gabriela Tavares Leme" className="h-16" />
             </div>
             <p className="text-sm text-foreground/60 leading-relaxed">
               Especialista em estética avançada e aplicação de toxina botulínica em Curitiba.
