@@ -1,5 +1,5 @@
 import { Award } from "lucide-react";
-import doctorImage from "@/assets/dra-gabriela.jpeg";
+import doctorImage from "@/assets/dra-gabriela.png";
 
 const AboutDoctor = () => {
   return (
