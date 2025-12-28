@@ -20,33 +20,33 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section className="py-24 bg-background">
+    <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-4">
+        <div className="text-center mb-10 md:mb-16">
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-3 md:mb-4">
             Como Funciona a <span className="text-primary">Toxina Botulínica</span>
           </h2>
-          <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-foreground/70 max-w-2xl mx-auto px-2">
             Entenda o processo seguro e eficaz que proporciona resultados naturais e duradouros
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
           {steps.map((step, index) => (
             <div
               key={index}
               className="relative group"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
-              <div className="text-center p-8 rounded-2xl bg-card border border-primary/20 hover:border-primary/40 transition-all duration-500 hover:shadow-xl hover:-translate-y-2">
-                <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/10 mb-6 group-hover:bg-primary/20 transition-colors">
-                  <step.icon className="h-10 w-10 text-primary" />
+              <div className="text-center p-6 md:p-8 rounded-2xl bg-card border border-primary/20 hover:border-primary/40 transition-all duration-500 hover:shadow-xl hover:-translate-y-2">
+                <div className="inline-flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-full bg-primary/10 mb-5 md:mb-6 group-hover:bg-primary/20 transition-colors">
+                  <step.icon className="h-8 w-8 md:h-10 md:w-10 text-primary" />
                 </div>
-                <h3 className="font-serif text-2xl text-foreground mb-3">{step.title}</h3>
-                <p className="text-foreground/70">{step.description}</p>
+                <h3 className="font-serif text-xl md:text-2xl text-foreground mb-2 md:mb-3">{step.title}</h3>
+                <p className="text-foreground/70 text-sm md:text-base">{step.description}</p>
               </div>
               {index < steps.length - 1 && (
-                <div className="hidden md:block absolute top-1/2 -right-4 w-8 h-0.5 bg-primary/30"></div>
+                <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-primary/30"></div>
               )}
             </div>
           ))}

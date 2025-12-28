@@ -43,57 +43,57 @@ const contraindications = [
 
 const FAQ = () => {
   return (
-    <section className="py-24 bg-card">
+    <section className="py-16 md:py-24 bg-card">
       <div className="container mx-auto px-4 max-w-4xl">
-        <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-4">
+        <div className="text-center mb-10 md:mb-16">
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground mb-3 md:mb-4">
             Perguntas <span className="text-primary">Frequentes</span>
           </h2>
-          <p className="text-lg text-foreground/70">
+          <p className="text-base md:text-lg text-foreground/70 px-2">
             Tire suas dúvidas sobre os tratamentos com toxina botulínica
           </p>
         </div>
 
-        <Accordion type="single" collapsible className="space-y-4 mb-16">
+        <Accordion type="single" collapsible className="space-y-3 md:space-y-4 mb-10 md:mb-16">
           {faqs.map((faq, index) => (
             <AccordionItem
               key={index}
               value={`item-${index}`}
-              className="border border-primary/20 rounded-lg px-6 bg-card/50 backdrop-blur-sm hover:border-primary/40 transition-colors"
+              className="border border-primary/20 rounded-lg px-4 md:px-6 bg-card/50 backdrop-blur-sm hover:border-primary/40 transition-colors"
             >
-              <AccordionTrigger className="text-left font-semibold text-foreground hover:text-primary">
+              <AccordionTrigger className="text-left font-semibold text-foreground hover:text-primary text-sm md:text-base py-4">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-foreground/70 leading-relaxed">
+              <AccordionContent className="text-foreground/70 leading-relaxed text-sm md:text-base pb-4">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
 
-        <div className="bg-background border border-primary/20 rounded-2xl p-8">
-          <div className="flex items-start gap-4 mb-6">
+        <div className="bg-background border border-primary/20 rounded-2xl p-6 md:p-8">
+          <div className="flex flex-col sm:flex-row items-start gap-4 mb-5 md:mb-6">
             <div className="flex-shrink-0">
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                <AlertCircle className="h-6 w-6 text-primary" />
+              <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                <AlertCircle className="h-5 w-5 md:h-6 md:w-6 text-primary" />
               </div>
             </div>
             <div>
-              <h3 className="font-serif text-2xl text-foreground mb-2">Contraindicações</h3>
-              <p className="text-foreground/70 mb-4">
+              <h3 className="font-serif text-xl md:text-2xl text-foreground mb-2">Contraindicações</h3>
+              <p className="text-foreground/70 mb-4 text-sm md:text-base">
                 O tratamento com toxina botulínica não é recomendado nos seguintes casos:
               </p>
             </div>
           </div>
           
-          <div className="grid sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
             {contraindications.map((item, index) => (
               <div
                 key={index}
-                className="flex items-center gap-3 p-4 rounded-lg bg-primary/5 border border-primary/10"
+                className="flex items-center gap-3 p-3 md:p-4 rounded-lg bg-primary/5 border border-primary/10"
               >
                 <div className="w-2 h-2 rounded-full bg-primary flex-shrink-0"></div>
-                <span className="text-foreground/80">{item}</span>
+                <span className="text-foreground/80 text-sm md:text-base">{item}</span>
               </div>
             ))}
           </div>
