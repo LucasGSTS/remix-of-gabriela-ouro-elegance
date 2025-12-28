@@ -4,6 +4,7 @@ import PainBanners from "@/components/PainBanners";
 import AboutDoctor from "@/components/AboutDoctor";
 import HowItWorks from "@/components/HowItWorks";
 import Treatments from "@/components/Treatments";
+import BeforeAfter from "@/components/BeforeAfter";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import AppointmentForm from "@/components/AppointmentForm";
@@ -20,6 +21,7 @@ const Index = () => {
       <AboutDoctor />
       <HowItWorks />
       <Treatments />
+      <BeforeAfter />
       <Testimonials />
       <FAQ />
       <AppointmentForm />
