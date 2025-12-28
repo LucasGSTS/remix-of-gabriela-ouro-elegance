@@ -14,7 +14,7 @@ const treatments = [
     title: "Bruxismo e Dores Tensionais",
     description:
       "Alívio eficaz da tensão mandibular, dores de cabeça e desgaste dental causados pelo bruxismo.",
-    benefits: ["Redução da dor", "Proteção dental", "Relaxamento muscular"],
+    benefits: ["Redução da dor", "Relaxamento muscular"],
   },
   {
     icon: Droplet,

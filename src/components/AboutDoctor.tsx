@@ -1,49 +1,11 @@
-import { useEffect, useState } from "react";
 import { Award } from "lucide-react";
 import doctorImage from "@/assets/dra-gabriela.jpeg";
 
 const AboutDoctor = () => {
-  const [patients, setPatients] = useState(0);
-  const [rating, setRating] = useState(0);
-  const [experience, setExperience] = useState(0);
-
-  useEffect(() => {
-    const animateCounter = (setValue: (val: number) => void, target: number, duration: number) => {
-      let start = 0;
-      const increment = target / (duration / 16);
-      const timer = setInterval(() => {
-        start += increment;
-        if (start >= target) {
-          setValue(target);
-          clearInterval(timer);
-        } else {
-          setValue(Math.floor(start));
-        }
-      }, 16);
-    };
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          animateCounter(setPatients, 200, 2000);
-          animateCounter((val) => setRating(val / 10), 49, 2000);
-          animateCounter(setExperience, 5, 2000);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.5 }
-    );
-
-    const element = document.getElementById("about-section");
-    if (element) observer.observe(element);
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <section id="sobre" className="py-24 bg-card">
       <div className="container mx-auto px-4">
-        <div id="about-section" className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative">
             <div className="relative w-full max-w-md mx-auto">
               <div className="absolute inset-0 rounded-full bg-gold-shimmer blur-2xl opacity-30 animate-pulse-glow"></div>
@@ -78,19 +40,9 @@ const AboutDoctor = () => {
               detalhes.
             </p>
 
-            <div className="grid grid-cols-3 gap-6 pt-8">
-              <div className="text-center">
-                <div className="text-4xl font-bold text-primary mb-2">+{patients}</div>
-                <div className="text-sm text-foreground/60">Pacientes Atendidos</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-primary mb-2">{rating.toFixed(1)}★</div>
-                <div className="text-sm text-foreground/60">Avaliações</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-primary mb-2">+{experience}</div>
-                <div className="text-sm text-foreground/60">Anos de Experiência</div>
-              </div>
+            <div className="flex items-center gap-2 pt-8 text-foreground/70">
+              <Award className="h-5 w-5 text-primary" />
+              <span className="font-medium">CRBM-6 8350</span>
             </div>
           </div>
         </div>

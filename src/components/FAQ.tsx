@@ -20,7 +20,7 @@ const faqs = [
   {
     question: "Quanto tempo dura o efeito?",
     answer:
-      "Os resultados duram em média de 4 a 6 meses, variando de acordo com o metabolismo de cada paciente e a área tratada.",
+      "Os resultados duram em média de 3 a 6 meses, variando de acordo com o metabolismo de cada paciente e a área tratada.",
   },
   {
     question: "Quando verei os resultados?",
@@ -30,7 +30,7 @@ const faqs = [
   {
     question: "Posso voltar às atividades normais após o procedimento?",
     answer:
-      "Sim! O procedimento não requer tempo de recuperação. Apenas evite atividades físicas intensas nas primeiras 24 horas e não deitar por 4 horas após a aplicação.",
+      "Sim! O procedimento não requer tempo de recuperação. Apenas evite atividades físicas intensas nas primeiras 24 horas.",
   },
 ];
 
