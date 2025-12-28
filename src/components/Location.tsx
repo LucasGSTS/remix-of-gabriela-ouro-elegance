@@ -34,24 +34,6 @@ const Location = () => {
                 </div>
               </div>
 
-              <div className="p-6 rounded-xl bg-primary/5 border border-primary/20">
-                <h4 className="font-semibold text-foreground mb-3">Horário de Atendimento</h4>
-                <div className="space-y-2 text-foreground/70">
-                  <div className="flex justify-between">
-                    <span>Segunda a Sexta:</span>
-                    <span className="font-medium">9h - 18h</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Sábado:</span>
-                    <span className="font-medium">9h - 13h</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Domingo:</span>
-                    <span className="font-medium">Fechado</span>
-                  </div>
-                </div>
-              </div>
-
               <Button
                 onClick={openMaps}
                 className="w-full bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all"
