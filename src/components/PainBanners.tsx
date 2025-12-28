@@ -26,8 +26,8 @@ const treatments = [
 
 const PainBanners = () => {
   return (
-    <section className="py-20 bg-background flex items-center justify-center">
-      <div className="items-center justify-center relative flex" style={{ maxWidth: "1456px" }}>
+    <section className="py-12 md:py-20 bg-background flex items-center justify-center px-4">
+      <div className="items-center justify-center relative flex w-full" style={{ maxWidth: "1456px" }}>
         <CircularTestimonials
           testimonials={treatments}
           autoplay={true}
@@ -40,9 +40,9 @@ const PainBanners = () => {
             arrowHoverBackground: "#C19B2B",
           }}
           fontSizes={{
-            name: "32px",
-            designation: "18px",
-            quote: "18px",
+            name: "clamp(20px, 4vw, 32px)",
+            designation: "clamp(14px, 2.5vw, 18px)",
+            quote: "clamp(14px, 2.5vw, 18px)",
           }}
         />
       </div>
