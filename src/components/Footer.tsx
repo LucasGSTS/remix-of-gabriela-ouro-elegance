@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Mail, Phone } from "lucide-react";
+import { Instagram, Mail, Phone } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
@@ -85,20 +85,12 @@ const Footer = () => {
 
             <div className="flex gap-3 mt-6">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/dra.gabrielatleme/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-all hover:scale-110"
               >
                 <Instagram className="h-5 w-5" />
-              </a>
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-all hover:scale-110"
-              >
-                <Facebook className="h-5 w-5" />
               </a>
             </div>
           </div>
