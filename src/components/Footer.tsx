@@ -61,7 +61,7 @@ const Footer = () => {
                 <Phone className="h-4 w-4 flex-shrink-0" />
                 (41) 99638-5712
               </a>
-              <a href="mailto:contato@gabrielatavaresbioestetica.com.br" className="flex items-center gap-2 text-xs md:text-sm text-foreground/60 hover:text-primary transition-colors break-all">
+              <a href="mailto:Dra.gabrielatleme@gmail.com" className="flex items-center gap-2 text-xs md:text-sm text-foreground/60 hover:text-primary transition-colors break-all">
                 <Mail className="h-4 w-4 flex-shrink-0" />
                 <span className="break-all">Dra.gabrielatleme@gmail.com</span>
               </a>
