@@ -1,20 +1,14 @@
 import { Award } from "lucide-react";
 import doctorImage from "@/assets/dra-gabriela.png";
-
 const AboutDoctor = () => {
-  return (
-    <section id="sobre" className="py-16 md:py-24 bg-card">
+  return <section id="sobre" className="py-16 md:py-24 bg-card">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="relative order-2 md:order-1">
             <div className="relative w-48 sm:w-64 md:w-full max-w-md mx-auto">
               <div className="absolute inset-0 rounded-full bg-gold-shimmer blur-2xl opacity-30 animate-pulse-glow"></div>
               <div className="relative aspect-square rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl">
-                <img
-                  src={doctorImage}
-                  alt="Dra. Gabriela Tavares Leme"
-                  className="w-full h-full object-cover"
-                />
+                <img src={doctorImage} alt="Dra. Gabriela Tavares Leme" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
@@ -35,9 +29,7 @@ const AboutDoctor = () => {
             </p>
 
             <p className="text-base md:text-lg text-foreground/70 leading-relaxed">
-              Com anos de experiência e formação continuada, minha missão é proporcionar resultados seguros,
-              eficazes e que realcem a beleza natural de cada pessoa, sempre com cuidado e atenção aos
-              detalhes.
+              Com experiência e formação continuada, minha missão é proporcionar resultados seguros, eficazes e que realcem a beleza natural de cada pessoa, sempre com cuidado e atenção aos detalhes.
             </p>
 
             <div className="flex items-center gap-2 pt-4 md:pt-8 text-foreground/70 justify-center md:justify-start">
@@ -47,8 +39,6 @@ const AboutDoctor = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutDoctor;
