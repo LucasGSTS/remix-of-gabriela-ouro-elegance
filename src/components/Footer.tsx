@@ -1,16 +1,15 @@
 import { Instagram, Mail, Phone } from "lucide-react";
 import logo from "@/assets/logo.png";
-
 const Footer = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      element.scrollIntoView({
+        behavior: "smooth"
+      });
     }
   };
-
-  return (
-    <footer className="bg-card border-t-2 border-primary/20 relative overflow-hidden">
+  return <footer className="bg-card border-t-2 border-primary/20 relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-1 bg-gold-shimmer bg-[length:200%_100%] animate-shimmer"></div>
       
       <div className="container mx-auto px-4 py-10 md:py-16">
@@ -28,26 +27,17 @@ const Footer = () => {
             <h4 className="font-semibold text-foreground mb-3 md:mb-4 text-sm md:text-base">Institucional</h4>
             <ul className="space-y-2">
               <li>
-                <button
-                  onClick={() => scrollToSection("sobre")}
-                  className="text-foreground/60 hover:text-primary transition-colors text-xs md:text-sm"
-                >
+                <button onClick={() => scrollToSection("sobre")} className="text-foreground/60 hover:text-primary transition-colors text-xs md:text-sm">
                   Sobre
                 </button>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection("tratamentos")}
-                  className="text-foreground/60 hover:text-primary transition-colors text-xs md:text-sm"
-                >
+                <button onClick={() => scrollToSection("tratamentos")} className="text-foreground/60 hover:text-primary transition-colors text-xs md:text-sm">
                   Tratamentos
                 </button>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection("depoimentos")}
-                  className="text-foreground/60 hover:text-primary transition-colors text-xs md:text-sm"
-                >
+                <button onClick={() => scrollToSection("depoimentos")} className="text-foreground/60 hover:text-primary transition-colors text-xs md:text-sm">
                   Depoimentos
                 </button>
               </li>
@@ -67,29 +57,18 @@ const Footer = () => {
           <div className="col-span-2 md:col-span-1">
             <h4 className="font-semibold text-foreground mb-3 md:mb-4 text-sm md:text-base">Contato</h4>
             <div className="space-y-2 md:space-y-3">
-              <a
-                href="tel:+5541996385712"
-                className="flex items-center gap-2 text-xs md:text-sm text-foreground/60 hover:text-primary transition-colors"
-              >
+              <a href="tel:+5541996385712" className="flex items-center gap-2 text-xs md:text-sm text-foreground/60 hover:text-primary transition-colors">
                 <Phone className="h-4 w-4 flex-shrink-0" />
                 (41) 99638-5712
               </a>
-              <a
-                href="mailto:contato@gabrielatavaresbioestetica.com.br"
-                className="flex items-center gap-2 text-xs md:text-sm text-foreground/60 hover:text-primary transition-colors break-all"
-              >
+              <a href="mailto:contato@gabrielatavaresbioestetica.com.br" className="flex items-center gap-2 text-xs md:text-sm text-foreground/60 hover:text-primary transition-colors break-all">
                 <Mail className="h-4 w-4 flex-shrink-0" />
-                <span className="break-all">contato@gabrielatavaresbioestetica.com.br</span>
+                <span className="break-all">Dra.gabrielatleme@gmail.com</span>
               </a>
             </div>
 
             <div className="flex gap-3 mt-4 md:mt-6">
-              <a
-                href="https://www.instagram.com/dra.gabrielatleme/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-all hover:scale-110 active:scale-95"
-              >
+              <a href="https://www.instagram.com/dra.gabrielatleme/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-all hover:scale-110 active:scale-95">
                 <Instagram className="h-5 w-5" />
               </a>
             </div>
@@ -111,8 +90,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
